@@ -1,0 +1,41 @@
+{
+  "name": "ai-reading-coach",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reading Bloom — AI reading coach (React + NestJS monorepo).",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build:shared": "npm run build -w @reading-coach/shared",
+    "dev": "npm run build:shared && concurrently -k -n shared,api,web -c gray,magenta,cyan \"npm:dev:shared\" \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:shared": "npm run dev -w @reading-coach/shared",
+    "dev:api": "npm run dev -w @reading-coach/api",
+    "dev:web": "npm run dev -w @reading-coach/web",
+    "build": "npm run build:shared && npm run build -w @reading-coach/api && npm run build -w @reading-coach/web",
+    "start:api": "npm run start -w @reading-coach/api",
+    "test": "npm run build:shared && npm run test --workspaces --if-present",
+    "typecheck": "npm run build:shared && npm run typecheck --workspaces --if-present",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run typecheck && npm run lint && npm run format:check && npm test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@types/node": "^22.10.0",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.26",
+    "globals": "^15.15.0",
+    "prettier": "^3.9.10",
+    "typescript": "~5.7.3",
+    "typescript-eslint": "^8.72.2"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module"
+}

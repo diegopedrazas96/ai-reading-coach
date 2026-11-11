@@ -1,0 +1,204 @@
+.right-panel {
+  display: grid;
+  gap: 17px;
+}
+.results-card {
+  padding: 23px 21px;
+}
+.result-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.result-heading h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  color: #383f5b;
+  margin: 0;
+}
+.result-icon {
+  color: #f2b55b;
+  background: #fff7e9;
+  border-radius: 9px;
+  width: 33px;
+  height: 33px;
+  display: grid;
+  place-items: center;
+}
+.empty-results {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 18px 4px 8px;
+  gap: 9px;
+}
+.empty-illustration {
+  font-size: 60px;
+  margin: 4px 0 12px;
+  position: relative;
+  filter: drop-shadow(0 9px 7px #eee6d6);
+}
+.empty-illustration span {
+  position: absolute;
+  font-size: 27px;
+  right: -24px;
+  top: -10px;
+  color: #e1c480;
+}
+.empty-results strong {
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  color: #616583;
+}
+.empty-results p {
+  font-size: 11px;
+  color: #a1a7b4;
+  line-height: 1.8;
+  max-width: 210px;
+  margin: 0;
+}
+.result-gauge {
+  display: grid;
+  place-items: center;
+  padding: 21px 0;
+}
+.gauge-circle {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background: conic-gradient(#8ad3a5 var(--percentage), #edf0f6 0);
+  display: grid;
+  place-items: center;
+}
+.gauge-circle > div {
+  border-radius: 50%;
+  height: 114px;
+  width: 114px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gauge-circle strong {
+  font-family: 'Nunito', sans-serif;
+  font-size: 29px;
+  color: #3c4868;
+}
+.gauge-circle small {
+  font-size: 10px;
+  color: #a2a5b4;
+}
+.metric-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 0;
+  border-top: 1px solid #f0f1f5;
+  font-size: 11px;
+}
+.metric-row span {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  color: #858d9f;
+}
+.metric-row span svg {
+  color: #7e75c8;
+}
+.metric-row strong {
+  color: #4c5370;
+}
+.result-note {
+  font-size: 11px;
+  line-height: 1.7;
+  color: #7b84a0;
+}
+.transcript-toggle {
+  background: none;
+  border: 0;
+  color: #7468c6;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 7px 0;
+}
+.transcript-box {
+  background: #f7f7fc;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.tip-card {
+  background: #fff9e9;
+  border-color: #ffedd0;
+  padding: 20px 22px;
+}
+.tip-icon {
+  width: 34px;
+  height: 34px;
+  background: #fff0c5;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  margin-bottom: 11px;
+  font-size: 18px;
+}
+.tip-card strong {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  color: #80653f;
+}
+.tip-card p {
+  color: #a58c6c;
+  font-size: 11px;
+  line-height: 1.85;
+  margin: 9px 0;
+}
+.tip-card > span {
+  color: #c8a76a;
+  font-size: 11px;
+  font-weight: 800;
+}
+.navigation-card {
+  padding: 20px;
+}
+.nav-card-heading {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  color: #57558d;
+  font-size: 13px;
+}
+.navigation-card p {
+  font-size: 11px;
+  color: #9ba2b3;
+  line-height: 1.6;
+}
+.nav-buttons {
+  display: flex;
+  gap: 8px;
+}
+.nav-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+  flex: 1;
+  border: 1px solid #ebeaf6;
+  border-radius: 9px;
+  background: #fff;
+  color: #7a72bc;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 10px 5px;
+}
+.nav-buttons button:last-child {
+  color: #fff;
+  background: #7565d7;
+  border-color: #7565d7;
+}

@@ -1,0 +1,127 @@
+.page-container {
+  max-width: 1300px;
+  padding: 33px 50px 20px;
+  margin: auto;
+}
+.hero {
+  height: 247px;
+  background: #eeeafb;
+  border-radius: 22px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.hero-copy {
+  padding: 31px 0 30px 42px;
+  position: relative;
+  z-index: 2;
+}
+.hero-kicker {
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  font-size: 10px;
+  color: #7969cd;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.hero h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: -1.1px;
+  margin: 13px 0 10px;
+  color: #39385b;
+  font-weight: 900;
+}
+.hero h1 em {
+  font-style: normal;
+  color: #7965db;
+}
+.hero p {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #7c7a9f;
+  max-width: 415px;
+  margin: 0;
+}
+.hero-detail {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 10px;
+  font-weight: 800;
+  margin-top: 18px;
+  color: #a09ad1;
+}
+.tiny-stars {
+  color: #f5ae55;
+  font-size: 15px;
+}
+.hero-art {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 46%;
+  overflow: hidden;
+}
+.art-blob {
+  position: absolute;
+  width: 330px;
+  height: 260px;
+  right: 18px;
+  top: 17px;
+  background: #e1d9fa;
+  border-radius: 52% 48% 45% 55%;
+}
+.art-book {
+  font-size: 130px;
+  position: absolute;
+  right: 109px;
+  top: 67px;
+  filter: drop-shadow(3px 15px 4px #cec4ee);
+}
+.art-sun {
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  font-size: 55px;
+  color: #f9ca7e;
+}
+.art-cloud {
+  position: absolute;
+  color: #fff;
+  font-size: 64px;
+  z-index: 1;
+}
+.cloud-one {
+  right: 300px;
+  top: 9px;
+}
+.cloud-two {
+  right: 15px;
+  bottom: 5px;
+}
+.art-ground {
+  position: absolute;
+  bottom: -55px;
+  width: 400px;
+  height: 90px;
+  background: #d3c9f7;
+  right: 0;
+  border-radius: 50%;
+}
+.art-spark {
+  position: absolute;
+  color: #a69be4;
+  font-size: 28px;
+}
+.spark-one {
+  top: 65px;
+  right: 348px;
+}
+.spark-two {
+  bottom: 65px;
+  right: 35px;
+}

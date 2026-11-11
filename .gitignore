@@ -1,0 +1,42 @@
+# One .gitignore for the whole monorepo: patterns apply to apps/* and packages/* too.
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+.vite/
+
+# Tests & coverage
+coverage/
+*.lcov
+
+# Environment & secrets (keep .env.example committed)
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editors & OS
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local tooling
+.claude/
+*.local
